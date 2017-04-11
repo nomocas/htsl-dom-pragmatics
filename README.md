@@ -1,51 +1,39 @@
-# ES6 module boilerplate with full ES6 test suits and coverage
+# babelute-html-dom-pragmatics
 
-Largely inspired from https://istanbul.js.org/docs/tutorials/es2015/ and https://github.com/bcoe/es2015-coverage. Added : rollup bundling and karma runner + clean and complete.
+[![Travis branch](https://img.shields.io/travis/nomocas/babelute-html-dom-pragmatics/master.svg)](https://travis-ci.org/nomocas/babelute-html-dom-pragmatics)
+[![bitHound Overall Score](https://www.bithound.io/github/nomocas/babelute-html-dom-pragmatics/badges/score.svg)](https://www.bithound.io/github/nomocas/babelute-html-dom-pragmatics)
+[![npm](https://img.shields.io/npm/v/babelute-html-dom-pragmatics.svg)]()
+[![npm-downloads](https://img.shields.io/npm/dm/babelute-html-dom-pragmatics.svg)]()
+[![licence](https://img.shields.io/npm/l/babelute-html-dom-pragmatics.svg)](https://spdx.org/licenses/MIT)
+[![dependecies](https://img.shields.io/david/nomocas/babelute-html-dom-pragmatics.svg)]()
+[![dev-dependencies](https://img.shields.io/david/dev/nomocas/babelute-html-dom-pragmatics.svg)]()
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-- ES6 sources
-- transpiled with [babel](https://babeljs.io) (to dist/es5/*)
-- bundled with [rollup](https://github.com/rollup/rollup) (to dist/bundles/*)
-- ES6 tests with [mocha](https://mochajs.org) and [chai](http://chaijs.com/) (runned directly from es6 with [babel-register](https://babeljs.io/docs/usage/babel-register/))
-- [karma](http://karma-runner.github.io) runner with on-the-fly rollup/babel bundling
-- Code coverage with [istanbul](https://istanbul.js.org/) and [nyc](https://github.com/istanbuljs/nyc) directly from ES6 tests and sources (no bundle)
 
-- [eslint](http://eslint.org) ES6 base config for src and test
+Simple DOM engine for babelute-html-lexicon.
+
+More for demo on how create a pragmatic engine for a DSL.
 
 ## Usage
 
-clone this repo then :
-
 ```
-> npm i
+> yarn i babelute babelute-html-lexicon babelute-html-dom-pragmatics
 ```
 
-then :
+```javascript
+import htmlLexicon from 'babelute-html-lexicon';
+import 'babelute-html-dom-pragmatics';
 
-- build : `> npm run build`
-- test :  `> mocha` or `> npm test`
-- karma : `> npm run karma`
-- cover : `> npm run cover`
-- es5-watch : `> npm run es5-watch`
-- bundles-watch : `> npm run bundles-watch`
+const h = htmlLexicon.initializer();
 
-
-Don't forget to change :
-- package.json : infos (Module name, author, etc)
-- karma.conf.js and rollup.config.js : change __MY__PROJECT__ to the UMD module name of your choice
-
-## Produced outputs
-
-- dist/es5/* : commonjs unbundled files (transpiled with babel)
-- dist/bundles/index.js : umd module
-- dist/bundles/index.min.js : umd module minified with uglifyjs
-- dist/bundles/index.mjs : ES module
-
-## Bundling with third party libs
-
-If you want to do so (for UMD modules either for distribution or karma tests), you should use :
-- [rollup-plugin-node-resolve](https://github.com/rollup/rollup-plugin-node-resolve)
-- [rollup-plugin-commonjs](https://github.com/rollup/rollup-plugin-commonjs)
-
+h.section(
+	h.class('my-class')
+	.h1('hello world')
+	.div(h.id('my-id'), 'lorem ipsum...')
+	.button('fire !', h.click((e) => console.log('bouh', e)))
+)
+.$toDOM(document.getElementById('...'));
+```
 
 ## Licence
 
