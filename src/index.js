@@ -8,6 +8,8 @@
 
 import babelute from 'babelute';
 import { insertHTML } from 'nomocas-webutils/lib/dom-utils';
+import htmlLexicon from 'babelute-html-lexicon'; // external
+
 /**
  * @external {FacadePragmatics} https://github.com/nomocas/babelute
  */
@@ -105,6 +107,11 @@ const domPragmas = babelute.createFacadePragmatics({
 	}
 });
 
+htmlLexicon.addAliases({
+	$toDOM(domElement) {
+		return domPragmas.$output(domElement, this);
+	}
+});
 
 export default domPragmas;
 
