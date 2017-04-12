@@ -1,11 +1,10 @@
 {
   "name": "babelute-html-dom-pragmatics",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pure DOM engine for babelue-html-lexicon",
   "main": "dist/bundles/index.js",
   "module": "dist/bundles/index.mjs",
   "jsnext:main": "dist/bundles/index.mjs",
-
   "scripts": {
     "prebuild": "eslint src test",
     "build": "npm run bundles-build && uglifyjs dist/bundles/index.js -m -o dist/bundles/index.min.js",
@@ -18,7 +17,6 @@
     "prepublish": "npm test",
     "release": "standard-version"
   },
-
   "nyc": {
     "require": [
       "babel-register"
@@ -26,14 +24,12 @@
     "sourceMap": false,
     "instrument": false
   },
-
   "keywords": [
     "dom-render",
     "dsl",
     "babelute-html-lexicon",
     "pragmatics"
   ],
-
   "author": "Gilles Coomans",
   "license": "MIT",
   "dependencies": {
@@ -68,4 +64,3 @@
     "uglify-js": "^2.7.5"
   }
 }
-
