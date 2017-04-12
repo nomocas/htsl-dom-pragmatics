@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/nomocas/babelute-html-dom-pragmatics/compare/v0.2.0...v0.3.0) (2017-04-12)
+
+
+### Features
+
+* **engine:** add htmlLexicon $output sugar ([b90dbf9](https://github.com/nomocas/babelute-html-dom-pragmatics/commit/b90dbf9))
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2017-04-12)
 
