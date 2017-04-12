@@ -9,7 +9,6 @@
 [![dev-dependencies](https://img.shields.io/david/dev/nomocas/babelute-html-dom-pragmatics.svg)]()
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-
 Simple DOM engine for babelute-html-lexicon.
 
 More for demo on how create a pragmatic engine for a DSL.
@@ -29,7 +28,7 @@ const h = htmlLexicon.initializer();
 h.section(
 	h.class('my-class')
 	.h1('hello world')
-	.div(h.id('my-id'), 'lorem ipsum...')
+	.div(h.id('my-id'), 'lorem ipsum...', h.p('...'))
 	.button('fire !', h.click((e) => console.log('bouh', e)))
 )
 .$toDOM(document.getElementById('...'));
