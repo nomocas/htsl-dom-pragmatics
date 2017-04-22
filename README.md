@@ -2,12 +2,12 @@
 
 [![Travis branch](https://img.shields.io/travis/nomocas/htsl-dom-pragmatics/master.svg)](https://travis-ci.org/nomocas/htsl-dom-pragmatics)
 [![bitHound Overall Score](https://www.bithound.io/github/nomocas/htsl-dom-pragmatics/badges/score.svg)](https://www.bithound.io/github/nomocas/htsl-dom-pragmatics)
-[![npm](https://img.shields.io/npm/v/htsl-dom-pragmatics.svg)]()
-[![npm-downloads](https://img.shields.io/npm/dm/htsl-dom-pragmatics.svg)]()
-[![licence](https://img.shields.io/npm/l/htsl-dom-pragmatics.svg)](https://spdx.org/licenses/MIT)
 [![dependecies](https://img.shields.io/david/nomocas/htsl-dom-pragmatics.svg)]()
 [![dev-dependencies](https://img.shields.io/david/dev/nomocas/htsl-dom-pragmatics.svg)]()
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![npm](https://img.shields.io/npm/v/htsl-dom-pragmatics.svg)]()
+[![licence](https://img.shields.io/npm/l/htsl-dom-pragmatics.svg)](https://spdx.org/licenses/MIT)
+<!-- [![npm-downloads](https://img.shields.io/npm/dm/htsl-dom-pragmatics.svg)]() -->
 
 Simple DOM engine for htsl-lexicon.
 
