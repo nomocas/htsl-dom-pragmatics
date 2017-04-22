@@ -41,16 +41,16 @@ const domPragmas = babelute.createFacadePragmatics({
 		let templ;
 
 		$tag.appendChild(child);
-
-		for (let i = 0, len = babelutes.length; i < len; ++i) {
-			templ = babelutes[i];
-			if (typeof templ === 'undefined')
-				continue;
-			if (templ && templ.__babelute__)
-				this.$output(child, templ);
-			else
-				child.appendChild(document.createTextNode(templ)); // auto escaped when added to dom.
-		}
+		if (babelutes)
+			for (let i = 0, len = babelutes.length; i < len; ++i) {
+				templ = babelutes[i];
+				if (typeof templ === 'undefined')
+					continue;
+				if (templ && templ.__babelute__)
+					this.$output(child, templ);
+				else
+					child.appendChild(document.createTextNode(templ)); // auto escaped when added to dom.
+			}
 	},
 
 	text($tag, args /* value */ ) {
