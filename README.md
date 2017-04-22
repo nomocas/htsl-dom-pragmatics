@@ -1,27 +1,27 @@
-# babelute-html-dom-pragmatics
+# htsl-dom-pragmatics
 
-[![Travis branch](https://img.shields.io/travis/nomocas/babelute-html-dom-pragmatics/master.svg)](https://travis-ci.org/nomocas/babelute-html-dom-pragmatics)
-[![bitHound Overall Score](https://www.bithound.io/github/nomocas/babelute-html-dom-pragmatics/badges/score.svg)](https://www.bithound.io/github/nomocas/babelute-html-dom-pragmatics)
-[![npm](https://img.shields.io/npm/v/babelute-html-dom-pragmatics.svg)]()
-[![npm-downloads](https://img.shields.io/npm/dm/babelute-html-dom-pragmatics.svg)]()
-[![licence](https://img.shields.io/npm/l/babelute-html-dom-pragmatics.svg)](https://spdx.org/licenses/MIT)
-[![dependecies](https://img.shields.io/david/nomocas/babelute-html-dom-pragmatics.svg)]()
-[![dev-dependencies](https://img.shields.io/david/dev/nomocas/babelute-html-dom-pragmatics.svg)]()
+[![Travis branch](https://img.shields.io/travis/nomocas/htsl-dom-pragmatics/master.svg)](https://travis-ci.org/nomocas/htsl-dom-pragmatics)
+[![bitHound Overall Score](https://www.bithound.io/github/nomocas/htsl-dom-pragmatics/badges/score.svg)](https://www.bithound.io/github/nomocas/htsl-dom-pragmatics)
+[![npm](https://img.shields.io/npm/v/htsl-dom-pragmatics.svg)]()
+[![npm-downloads](https://img.shields.io/npm/dm/htsl-dom-pragmatics.svg)]()
+[![licence](https://img.shields.io/npm/l/htsl-dom-pragmatics.svg)](https://spdx.org/licenses/MIT)
+[![dependecies](https://img.shields.io/david/nomocas/htsl-dom-pragmatics.svg)]()
+[![dev-dependencies](https://img.shields.io/david/dev/nomocas/htsl-dom-pragmatics.svg)]()
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-Simple DOM engine for babelute-html-lexicon.
+Simple DOM engine for htsl-lexicon.
 
 More for demo on how create a pragmatic engine for a DSL.
 
 ## Usage
 
 ```
-> yarn i babelute babelute-html-lexicon babelute-html-dom-pragmatics
+> yarn i babelute htsl-lexicon htsl-dom-pragmatics
 ```
 
 ```javascript
-import htmlLexicon from 'babelute-html-lexicon';
-import 'babelute-html-dom-pragmatics';
+import htmlLexicon from 'htsl-lexicon';
+import 'htsl-dom-pragmatics';
 
 const h = htmlLexicon.initializer();
 

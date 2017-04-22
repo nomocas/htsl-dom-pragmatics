@@ -1,5 +1,5 @@
 {
-  "name": "babelute-html-dom-pragmatics",
+  "name": "htsl-dom-pragmatics",
   "version": "0.3.0",
   "description": "Pure DOM engine for babelue-html-lexicon",
   "main": "dist/bundles/index.js",
@@ -27,14 +27,14 @@
   "keywords": [
     "dom-render",
     "dsl",
-    "babelute-html-lexicon",
+    "htsl-lexicon",
     "pragmatics"
   ],
   "author": "Gilles Coomans",
   "license": "MIT",
   "dependencies": {
     "babelute": "^0.4.3",
-    "babelute-html-lexicon": "^0.2.3",
+    "htsl-lexicon": "^0.2.3",
     "nomocas-webutils": "^0.0.7"
   },
   "devDependencies": {

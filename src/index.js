@@ -8,7 +8,7 @@
 
 import babelute from 'babelute';
 import { insertHTML } from 'nomocas-webutils/lib/dom-utils';
-import htmlLexicon from 'babelute-html-lexicon'; // external
+import htmlLexicon from 'htsl-lexicon'; // external
 
 /**
  * @external {FacadePragmatics} https://github.com/nomocas/babelute
@@ -20,8 +20,8 @@ const $baseOutput = babelute.FacadePragmatics.prototype.$output;
  * @type {FacadePragmatics}
  * @public
  * @example
- * import domPragmas from 'babelute-html/src/html-to-dom.js';
- * import htmlLexicon from 'babelute-html/src/html-lexicon.js';
+ * import domPragmas from 'htsl/src/html-to-dom.js';
+ * import htmlLexicon from 'htsl/src/html-lexicon.js';
  *
  * const h = htmlLexicon.initializer;
  * const sentence = h.div(state.intro).section(h.class('my-section').h1(state.title));
