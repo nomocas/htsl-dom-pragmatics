@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/nomocas/htsl-dom-pragmatics/compare/v0.3.0...v0.3.1) (2017-07-08)
+
+
+### Bug Fixes
+
+* **package:** update dependencies ([6052fdb](https://github.com/nomocas/htsl-dom-pragmatics/commit/6052fdb))
+* **package:** update dependencies ([d430d09](https://github.com/nomocas/htsl-dom-pragmatics/commit/d430d09))
+* **render:** add .tag gard when no babelutes ([c0f789e](https://github.com/nomocas/htsl-dom-pragmatics/commit/c0f789e))
+* **repo:** rename repo to htsl-dom-pragmatics ([8c3d4f2](https://github.com/nomocas/htsl-dom-pragmatics/commit/8c3d4f2))
+* **yarn:** remove yarn.lock ([0a2048c](https://github.com/nomocas/htsl-dom-pragmatics/commit/0a2048c))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/nomocas/htsl-dom-pragmatics/compare/v0.2.0...v0.3.0) (2017-04-12)
 

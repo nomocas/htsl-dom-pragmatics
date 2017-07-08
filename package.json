@@ -1,6 +1,6 @@
 {
   "name": "htsl-dom-pragmatics",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Pure DOM engine for babelue-html-lexicon",
   "main": "dist/bundles/index.js",
   "module": "dist/bundles/index.mjs",
@@ -64,4 +64,3 @@
     "uglify-js": "^3.0.3"
   }
 }
-
